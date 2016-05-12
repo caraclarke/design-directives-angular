@@ -3,13 +3,13 @@ var app = angular.module('computerApp', ['ngRoute'])
 
     $routeProvider.
       when('/main', {
-        templateUrl: 'main.html',
+        templateUrl: 'views/main.html',
         controller: 'MainCtrl'
       })
       .otherwise({redirectTo: '/main'});
 
   }])
 
-  .controller('MainCtrl', [function() {
-    console.log('This is the MainCtrl');
+  .controller('MainCtrl', ['$scope', function($scope) {
+    console.log($scope);
   }]);
