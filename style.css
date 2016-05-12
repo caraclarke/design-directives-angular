@@ -6,6 +6,11 @@ img {
   width: 100%;
 }
 
+.service {
+  border-bottom: 1px solid grey;
+  padding: 25px;
+}
+
 .footer {
   padding-top: 40px;
   padding-bottom: 40px;
