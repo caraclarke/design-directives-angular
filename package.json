@@ -1,0 +1,11 @@
+{
+  "name": "design-directives-angular",
+  "version": "1.0.0",
+  "description": "angular test directives",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Cara Clarke",
+  "license": "ISC"
+}
