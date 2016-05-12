@@ -22,14 +22,20 @@ var app = angular.module('computerApp', ['ngRoute'])
 
   }])
 
-  .controller('MainCtrl', ['$scope', function($scope) {
-    console.log('changed');
+  .controller('MainCtrl', ['$scope', '$http', function($scope, $http) {
+    $http.get('json/services.json').then(function(res) {
+      $scope.services = res.data;
+    });
   }])
 
-  .controller('ContactCtrl', ['$scope', function($scope) {
-    console.log('contact');
+  .controller('ContactCtrl', ['$scope', '$http', function($scope, $http) {
+    $http.get('json/locations.json').then(function(res) {
+      $scope.locations = res.data;
+    });
   }])
 
-  .controller('ServicesCtrl', ['$scope', function($scope) {
-    console.log('services');
+  .controller('ServicesCtrl', ['$scope', '$http', function($scope, $http) {
+    $http.get('json/services.json').then(function(res) {
+      $scope.services = res.data;
+    });
   }]);

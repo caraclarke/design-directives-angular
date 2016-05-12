@@ -2,38 +2,20 @@
   <div class="col-md-12">
     <h2>Services</h2>
 
-    <div class="row service">
-      <div class="col-md-2">
-        <img src="http://techguystaging.com/files/computer-icon.png" alt="computer icon">
-      </div>
-      <div class="col-md-10">
-        <h3>Hardware Repair</h3>
-        <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet.</p>
-        <a class="btn btn-primary" href="contact.html">Contact Us</a>
+    <div ng-repeat="service in services">
+      <div class="row service">
+
+        <div class="col-md-2">
+          <img ng-src="http://techguystaging.com/files/{{service.image}}" alt="computer icon">
+        </div>
+        <div class="col-md-10">
+          <h3>{{service.name}}</h3>
+          <p>{{service.description}}</p>
+          <a class="btn btn-primary" href="contact.html">Contact Us</a>
+        </div>
       </div>
     </div>
 
-    <div class="row service">
-      <div class="col-md-2">
-        <img src="http://techguystaging.com/files/computer-icon.png" alt="computer icon">
-      </div>
-      <div class="col-md-10">
-        <h3>Software Testing</h3>
-        <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet.</p>
-        <a class="btn btn-primary" href="contact.html">Contact Us</a>
-      </div>
-    </div>
+  </div> <!-- end col 12 -->
 
-    <div class="row service">
-      <div class="col-md-2">
-        <img src="http://techguystaging.com/files/computer-icon.png" alt="computer icon">
-      </div>
-      <div class="col-md-10">
-        <h3>Sticker Additions</h3>
-        <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet.</p>
-        <a class="btn btn-primary" href="contact.html">Contact Us</a>
-      </div>
-    </div>
-
-  </div>
 </div>
